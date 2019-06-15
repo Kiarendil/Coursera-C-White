@@ -20,10 +20,10 @@ int IsPalindrom(string s) {
     return poly;
 }
 
-vector<string> PalindromFilter(vector<string> words, int minLength) {
+vector<string> PalindromFilter(const vector<string>& words, int minLength) {
     vector<string> result;
 
-    for (auto w: words) {
+    for (const auto& w: words) {
         if (IsPalindrom(w) && w.size() >= minLength) {
             result.push_back(w);
         }
@@ -46,7 +46,7 @@ int main() {
     cin >> m;
 
     vector<string> r = PalindromFilter(v, m);
-    for (auto w: r) {
+    for (const auto& w: r) {
         cout << w << endl;
     }
 

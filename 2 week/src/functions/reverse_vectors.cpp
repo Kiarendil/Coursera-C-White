@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include "../my_vector.h"
 
 using namespace std;
 
@@ -32,20 +33,12 @@ int main() {
     vector<int> numbers;
 
     cin >> N;
-    for(int i = 0; i < N; i++) {
-        int inp;
-        cin >> inp;
-        numbers.push_back(inp);
-    }
+    numbers = create_vector_int(N);
 
     vector<int> new_numbers = Reversed(numbers);
 
-    for (const auto &words: numbers) {
-        cout << words << endl;
-    }
-    for (const auto &words: new_numbers) {
-        cout << words << endl;
-    }
+    print_vector_int(numbers);
+    print_vector_int(new_numbers);
 
 
     return 0;

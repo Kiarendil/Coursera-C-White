@@ -13,3 +13,7 @@ add_executable(reverse_vectors src/functions/reverse_vectors.cpp src/my_vector.c
 add_executable(average_t src/vector/average_t.cpp)
 add_executable(queue src/vector/queue.cpp)
 add_executable(daily src/vector/daily.cpp)
+add_executable(anagram src/map/anagram.cpp)
+add_executable(Handbook src/map/handbook.cpp)
+add_executable(buses src/map/buses.cpp)
+add_executable(buses_2 src/map/buses_2.cpp)
